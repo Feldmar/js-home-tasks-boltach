@@ -1,93 +1,25 @@
-"use strict";
+'use strict';
 
 //Задание №1
 
 var cooperator = {
-
 'Anna': 29,
 'Serg': 35, 
 'Elena': 1, 
-'Anton': 99
-
+'Anton': 9
 };
 
 function employee() {
-  
-var a = Math.max.apply(Math, Object.values(cooperator));
-
+var a = Math.max.apply(Math, Object.values(cooperator)); //
+// К вопросу контекста в данном случае мы получаем почти то же самое что получили бы ручным циклом for но не получили потому что я написала так как написала)
+// Буквально мы получили ['29','35','1','99'], я надеюсь что понимаю это правильно, потому что теперь я неуверена. 
+//Я знаю что если бы мы получили массив с большим количеством данных - то apply при его обработке вполне мог бы не сработать и выдать неправильный ответ.
+// это конечно я могла реализовать и через reduce или call но там покачто что-то сложное и не совсем понятное для меня в плане синтаксиса, так что у меня не получилось,
+// у меня на самом деле не так много понимания как работают циклы (особенно while) поэтому мне чуть-чуть проще работать с методами.
 for (var name in cooperator) {
-
     if (a === cooperator[name]) {
-
         console.log('Cотрудник который выполнил больше всех задач: ' + name );
-
-    } else {
-
-  }
+    } 
 }
 }
 employee();
-
-// Задание №2
-
-let image = {
-
-    width: 200,
-
-    height: 300,
-
-    title: "cool image"
-
-};
-    
-    
-function multiplyNumeric(image) {
-
-    for (let key in image) {
-
-        if (typeof image[key] === "number") {
-
-            image[key] = image[key] * 2;
-
-        } else if (typeof image[key] === "string") {
-
-            image[key] = "amazing image";
-
-        }   
-    }
-    console.log(Object.values(image));
-}
-
-multiplyNumeric(image);
-
-//Задание №3 (которое надо было наверное делать не через функцию видимо)
-
-function consider() {
-
-    var calc = [];
-    
-    while (true) {
-
-      var qwe = prompt('Введите число', '');
-
-       if (qwe == '' || qwe === null || isNaN(qwe))  // я знаю что тут нужны фигурные скобки, но с ними не работает(
-       
-            break;
-
-            calc.push(+qwe);
-       
-    }
-    
-    var sum = 0;
-
-    for (var i = 0; i < calc.length; i++) {
-
-      sum += calc[i];
-
-    }
-
-    console.log(sum);
-
-    }
-    
-    consider();
