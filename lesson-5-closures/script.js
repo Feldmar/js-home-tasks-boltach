@@ -55,11 +55,11 @@ function calcСt(tips) {
 	return sum / tips.length;
 }
 
-var j = calcСt(john.tips);
-var m = calcСt(mark.tips);
+var johnFamily = calcСt(john.tips);
+var markFamily = calcСt(mark.tips);
 
-if (j > m) {
-	console.log( 'Cемья' +'\u00A0' +john.fullName+ ' в среднем заплатила больше всего чаевых, а именно :' +'\u00A0' +j);
-} else if (j < m) {
-	console.log('Cемья' +'\u00A0' +mark.fullName+ ' в среднем заплатила больше всего чаевых, а именно :' +'\u00A0' +m);
+if (johnFamily > markFamily) {
+	console.log( 'Cемья' +'\u00A0' +john.fullName+ ' в среднем заплатила больше всего чаевых, а именно :' +'\u00A0' +johnFamily);
+} else if (johnFamily < markFamily) {
+	console.log('Cемья' +'\u00A0' +mark.fullName+ ' в среднем заплатила больше всего чаевых, а именно :' +'\u00A0' +markFamily);
 }
