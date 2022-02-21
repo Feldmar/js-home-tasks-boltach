@@ -1,3 +1,5 @@
+'use strict';
+
 // Задание №2
 
 var image = {
@@ -5,8 +7,7 @@ var image = {
     height: 300,
     title: "cool image"
 };
-
-    for (let key in image) {
+    for (var key in image) {
         if (typeof image[key] === "number") {
             image[key] = image[key] * 2;
         } 
