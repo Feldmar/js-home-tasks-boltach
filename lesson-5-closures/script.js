@@ -20,7 +20,7 @@ var john = {
 		this.total[i] = (bill * 2) * percentage;	
         }	
 	}
-}
+};
 john.calcTips();
 
 var mark = {
@@ -43,7 +43,7 @@ var mark = {
 			this.total[i] = (bill * 2) * percentage;
 		}
 	}
-}
+};
 
 mark.calcTips();
 
