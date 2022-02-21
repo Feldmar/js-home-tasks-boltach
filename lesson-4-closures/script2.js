@@ -4,15 +4,16 @@
 var obj = {
     className: 'open menu menu open'
 };
-var class1 = obj.className.split(' ');
+var classes = obj.className.split(' ');
 
 function removeCls(obj, any) {
-  for (var i = 0; i < class1.length; i++) {
-    if (class1[i] === any) {
-      class1.splice(i,1);
+  for (var i = 0; i < classes.length; i++) {
+    if (classes[i] === any) {
+      classes.splice(i,1);
+      i++;
     }
   }
-  obj.className = class1.join(' ');
+  obj.className = classes.join(' ');
 console.log(obj.className);
 }
 

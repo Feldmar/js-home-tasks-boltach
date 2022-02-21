@@ -9,7 +9,6 @@ function gridStr () {
     var amtString = +prompt('Введите желаемое количество строк', 8);
     var count = 2;
     var product = '';
-
         for (var i = 0; i < lengthString; i++) {
             for (var n = 0; n < amtString; n++) {
                 if (i % count == 0) {
@@ -31,4 +30,4 @@ function gridStr () {
             product = '';
         } 
     }
-    gridStr();
+gridStr();
