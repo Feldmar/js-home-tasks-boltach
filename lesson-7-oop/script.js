@@ -29,7 +29,7 @@
   var questions = [que0, que1, que2];
   var estimation = Math.floor(Math.random() * questions.length);  
   questions[estimation].viewQuestion();
-  var answer = parseInt(prompt(estimation)); 
+  var answer = parseInt(prompt('Answer question № '+estimation)); 
   questions[estimation].verifyAnswer(answer);
 
 })();
