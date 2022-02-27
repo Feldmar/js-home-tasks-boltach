@@ -24,4 +24,3 @@ console.log(isPal('АрозаупаланалапуАзора'));
 console.log(isPal('zz7'));
 console.log(isPal('787'));
               
-

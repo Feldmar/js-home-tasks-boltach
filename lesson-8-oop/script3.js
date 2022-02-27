@@ -7,9 +7,10 @@ function anClean(arr) {
     obj[sort] = arr[i]; 
   }
   var result = [];
-  for (var key in obj)
+  for (var key in obj) {
   result.push(obj[key]);
+  }
   return result;
 }
-var arr = ["воз", "киборг", "корсет", "ЗОВ", "гробик", "костер", "сектор"];
+var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];
 console.log(anClean(arr));
