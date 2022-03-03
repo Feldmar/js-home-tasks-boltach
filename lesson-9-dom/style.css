@@ -7,7 +7,12 @@ h1 {
   text-align: center;
 }
 p {
-  border: 4px double black;
+  font-family: Courier;
+  border: 4px double rgb(211, 214, 28);
   height: 400px;
   width: 600px;
+  word-wrap: break-word;
+}
+button {
+  font-family: Courier;
 }
