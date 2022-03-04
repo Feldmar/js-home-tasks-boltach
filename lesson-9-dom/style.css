@@ -9,10 +9,11 @@ h1 {
   font-family: Courier;
 }
 p {
+  padding: 3px;
   font-family: Courier;
   border: 4px double rgb(211, 214, 28);
-  height: 400px;
-  width: 600px;
+  min-height: 400px;
+  min-width: 300px;
   word-wrap: break-word;
 }
 button {
