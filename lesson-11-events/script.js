@@ -2,10 +2,12 @@
 window.onload = function locationEl(EO) {
   EO = EO || window.event;
   var element = document.getElementsByTagName('img');
+  
   for (var i = element.length - 1; i >= 0; i--) {
     var el = element[i];
     el.style.top = el.offsetTop + 'px';
     el.style.left = el.offsetLeft + 'px';
+    el.style.width = '200px';
     el.style.cursor = 'grab';
     el.style.position = 'absolute';
     el.onmousedown = impact;
