@@ -1,0 +1,46 @@
+#clock {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: yellow;
+}
+
+.childEl {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: blueviolet;
+	position: absolute;
+	text-align: center;
+}
+
+.BaseClock {
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	color: black;
+}
+
+.arrHours {
+	width: 9px;
+	height: 60px;
+	border-radius: 10px;
+	position: absolute;
+	background-color: black;
+}
+
+.arrMin {
+	width: 5px;
+	height: 120px;
+	border-radius: 10px;
+	position: absolute;
+	background-color: black;
+}
+
+.arrSec {
+	width: 2px;
+	height: 140px;
+	border-radius: 10px;
+	position: absolute;
+	background-color: red;
+}
