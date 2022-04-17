@@ -1,7 +1,7 @@
 'use strict';
 
-var drinkStorage = new TLocalStorage();
-      drinkStorage.reset();
+var drinkStorage = new TLocalStorage('drinks');
+drinkStorage.reset();
 
 function addDrink() {
   var drinkName = prompt('Введите название напитка', 'Test Drink').toLowerCase().trim();
@@ -12,7 +12,7 @@ function addDrink() {
     fHash.alcohol = confirm('Ваш напиток алкогольный?') ? 'да' : 'нет';
     return drinkStorage.addValue(drinkName, fHash);
   } else {
-    alert('Ввод отменен!')
+    alert('Ввод отменен!');
   }
 }
 
@@ -60,8 +60,8 @@ function showDrinksMenu() {
   document.getElementById('message').innerHTML = resultHTML;
 }
 
-var eatStorage = new TLocalStorage();
-      eatStorage.reset();
+var eatStorage = new TLocalStorage('food');
+eatStorage.reset();
 
 function addEat() {
   var eatName = prompt('Введите название напитка', 'Test Drink').toLowerCase().trim();
@@ -72,7 +72,7 @@ function addEat() {
     rHash.spicy = confirm('Ваше блюдо острое?') ? 'да' : 'нет';
     return eatStorage.addValue(eatName, rHash);
   } else {
-    alert('Ввод отменен!')
+    alert('Ввод отменен!');
   }
 }
 

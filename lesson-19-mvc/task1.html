@@ -13,13 +13,11 @@
         font-family: "Open Sans", serif;
         font-size: 0.8em;
       }
-      .manage-drinks > * {
-        display: block;
-        padding: 10px
+      .manage-drinks{
+        display: grid;
       }
-      .manage-eat > * {
-        display: block;
-        padding: 10px
+      .manage-eat{
+        display: grid;
       }
       .manage-drinks .drink-info .manage-eat .eat-info {
         margin: 0.5em auto;
@@ -48,7 +46,7 @@
       <input type='button' value='Показать информацию о напитке' onclick='showDrinkInfo()'>
       <input type='button' value='Удалить напиток' onclick='removeDrink()'>
       <input type='button' value='Показать меню напитков' onclick='showDrinksMenu()'>
-      <div id="message" class="drink-info"></div>
+      <div class="drink-info"></div>
     </div>
     <div class="manage-eat">
       <input type='button' value='Добавить блюдо' onclick='addEat()'>
