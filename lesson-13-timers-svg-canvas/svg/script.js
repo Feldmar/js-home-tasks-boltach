@@ -12,7 +12,7 @@ var analogWatchCY = 150;
 var analogWatchRadius = 150; 
 var analogWatchColor = 'yellow';
 var svgElForElWatch;
-var	svgElForElWatchText;
+var svgElForElWatchText;
 var radiusElWatch = 70;
 var radius = 120;
 var angleValue = 0;

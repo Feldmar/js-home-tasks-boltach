@@ -8,7 +8,7 @@ var angleValue = 0;
 var numHours = 12; //цифры часов от 0 до 12
 var intervalNum = 30; //расстояние между цифрами на циферблате
 var elWatch; //для электронных часов
-var	elWatchText;
+var elWatchText;
 var elWatchWidth = 90; //ширина электронных часов
 var elWatchHeight = 25; //высота электронных часов
 var radiusElWatch = 70; //расстояние электронных часов
@@ -27,7 +27,7 @@ var secondsDeg; //положение секундной стрелки
 
 function analogWatch() {
 	ctx.beginPath();
-  ctx.fillStyle = 'yellow';
+	ctx.fillStyle = 'yellow';
   ctx.arc(canavaCenterX, canavaCenterY, 150, 0, Math.PI * 2, false);
   ctx.fill();
 
@@ -58,7 +58,7 @@ function analogWatch() {
 function elWatch() { //электронные часы
 	var time = new Date(); //текущее время
 	ctx.globalCompositeOperation = 'source-over';
-  ctx.beginPath();
+	ctx.beginPath();
 	ctx.fillStyle = 'yellow';
 	ctx.fillRect(canavaCenterX - elWatchWidth / 2, canavaCenterY - radiusElWatch - elWatchHeight / 2, 100, 25);
 	ctx.fill();
@@ -74,7 +74,7 @@ function elWatch() { //электронные часы
 function arrowHours() {
 	var time = new Date();
 	hoursDeg = 30 * (time.getHours() + (1 / 60) * time.getMinutes());
-  ctx.beginPath();
+	ctx.beginPath();
 	ctx.strokeStyle = 'black';
 	ctx.lineWidth = arrHoursWidth;
 	ctx.lineCap = 'round';
@@ -85,7 +85,7 @@ function arrowHours() {
 function arrowMinutes() {
 	var time = new Date();
 	minutesDeg = 6 * (time.getMinutes() + (1 / 60) * time.getSeconds());
-  ctx.beginPath();
+	ctx.beginPath();
 	ctx.strokeStyle = 'black';
 	ctx.lineWidth = arrMinutesWidth;
 	ctx.lineCap = 'round';
@@ -97,7 +97,7 @@ function arrowMinutes() {
 function arrowSeconds() {
 	var time = new Date();
 	secondsDeg = 6 * time.getSeconds();
-  ctx.beginPath(); 
+	ctx.beginPath(); 
 	ctx.strokeStyle = 'red';
 	ctx.lineWidth = arrSecondsWidth;
 	ctx.lineCap = 'round';
