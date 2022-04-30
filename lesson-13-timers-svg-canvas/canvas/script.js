@@ -28,8 +28,8 @@ var secondsDeg; //положение секундной стрелки
 function analogWatch() {
 	ctx.beginPath();
 	ctx.fillStyle = 'yellow';
-  ctx.arc(canavaCenterX, canavaCenterY, 150, 0, Math.PI * 2, false);
-  ctx.fill();
+	ctx.arc(canavaCenterX, canavaCenterY, 150, 0, Math.PI * 2, false);
+	ctx.fill();
 
   for(var i = 1; i <= numHours; i++){
     var miniCircleCX;
