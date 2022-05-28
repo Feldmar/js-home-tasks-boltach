@@ -1,0 +1,31 @@
+#tennis {
+	margin: 0px auto;
+	border: 1px solid rgb(0, 5, 45);
+	background-color: yellow;
+}
+
+.score {
+	font-size: 30px;
+	text-align: center;
+}
+
+.racquetLeft {
+	width: 10px;
+	height: 120px;
+	position: absolute;
+	background-color: green;
+}
+
+.racquetRight {
+	width: 10px;
+	height: 120px;
+	position: absolute;
+	background-color: blue;
+
+}
+
+.ball {
+	position: absolute;
+	border-radius: 50%;
+	background-color: red;
+}
